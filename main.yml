@@ -30,6 +30,14 @@
       when: configure_omz
       tags: ['omz']
 
+    - import_tasks: tasks/powerlinefonts.yml
+      when: configure_powerline
+      tags: ['powerline']
+
+    - import_tasks: tasks/powerlevel10k.yml
+      when: configure_pl10k
+      tags: ['pl10k']
+
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 

@@ -1,0 +1,12 @@
+---
+- name: Install powerlevel10k.
+  vars:
+    p10k_repository_url: 'https://github.com/romkatv/powerlevel10k.git'
+  git:
+    repo: "{{ p10k_repository_url }}"
+    dest: "{{ p10k_path }}"
+    depth: '1'
+    update: no
+    version: 'master'
+  become: no
+

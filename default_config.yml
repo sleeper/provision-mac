@@ -1,6 +1,8 @@
 ---
 downloads: ~/.ansible-downloads/
 
+the_user: "{{ ansible_user_id }}"
+
 configure_dotfiles: true
 dotfiles_repo: https://github.com/sleeper/dotfiles.git
 dotfiles_repo_accept_hostkey: true
@@ -19,6 +21,13 @@ mas_password: ""
 
 npm_packages: []
 pip_packages: []
+
+configure_powerline: true
+powerline_dest_dir: "~/config/powerline"
+
+configure_pl10k: true
+p10k_path: "~/config/powerlevel10k"
+
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
