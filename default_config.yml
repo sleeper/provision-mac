@@ -26,7 +26,7 @@ configure_powerline: true
 powerline_dest_dir: "~/config/powerline"
 
 configure_pl10k: true
-p10k_path: "~/config/powerlevel10k"
+p10k_path: "~/.oh-my-zsh/custom/themes/powerlevel10k"
 
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
