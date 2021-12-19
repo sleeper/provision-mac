@@ -1,0 +1,19 @@
+---
+- name: Ensure iTerm directories are initialized if they are not already.
+  command: "open -a /Applications/iTerm.app"
+  args:
+    creates: "~/Library/Application Support/iTerm2/DynamicProfiles/"
+
+# iTerm2 will need to be restarted for preference changes to kick in.
+- name: Ensure preferences are loaded from a custom folder.
+  command: "{{ item }}"
+  with_items:
+    - "defaults write com.googlecode.iterm2 'PrefsCustomFolder' -string '{{ iterm2_preferences_custom_folder }}'"
+    - "defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder true"
+  when: iterm2_preferences_custom_folder is defined and iterm2_preferences_custom_folder
+
+- name: Ensure shell integration is installed.
+  shell: curl -L https://iterm2.com/misc/install_shell_integration.sh | bash
+  args:
+    warn: no
+  when: iterm2_shell_integration is defined and iterm2_shell_integration

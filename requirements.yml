@@ -1,0 +1,6 @@
+---
+roles:
+  - name: gantsign.oh-my-zsh
+
+collections:
+  - name: geerlingguy.mac

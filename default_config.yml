@@ -1,0 +1,24 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+dotfiles_repo: https://github.com/sleeper/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_repo_version: main
+
+homebrew_installed_packages: []
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps: []
+
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+npm_packages: []
+pip_packages: []
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
