@@ -1,7 +1,7 @@
 # provision-mac
 
 A set of `ansible` config to quickly setup my new macs.
-Shamelessly inspired (and some time copied) from [geerlingguy/mac-dev-playbook](geerlingguy/mac-dev-playbook), [lwalley/ ansible-role-iterm2](lwalley/ ansible-role-iterm2), [gantsign/ansible-role-oh-my-zsh](gantsign/ansible-role-oh-my-zsh), [sicruse/ansible-powerline-fonts](sicruse/ansible-powerline-fonts).
+Shamelessly inspired (and some time copied) from [geerlingguy/mac-dev-playbook](geerlingguy/mac-dev-playbook), [lwalley/ansible-role-iterm2](lwalley/ansible-role-iterm2), [gantsign/ansible-role-oh-my-zsh](gantsign/ansible-role-oh-my-zsh), [sicruse/ansible-powerline-fonts](sicruse/ansible-powerline-fonts).
 
 To use:
 ```
